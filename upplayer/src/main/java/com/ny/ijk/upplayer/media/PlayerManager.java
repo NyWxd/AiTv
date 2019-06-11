@@ -834,31 +834,6 @@ public class PlayerManager implements View.OnClickListener{
         //隐藏掉控制控件
         setControlViewVisiable(false);
 
-//        int position = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
-//        int delta = (int) (percent * mMaxVolume);
-//
-//        volume = position + delta;
-//
-//        if (volume > mMaxVolume){
-//            volume = mMaxVolume;
-//        }else if (volume < 0){
-//            volume = 0;
-//        }
-//
-//        //变更声音
-//        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC,volume,0);
-//        //变更进度条
-//        int i = (int) (volume  * 1.0 / mMaxVolume *100);
-//
-//        //显示调节音量的弹窗
-//        showVolumeDialog(i);
-//
-//        String s = i +"%";
-//        if (i == 0){
-//            s = "off";
-//        }
-//        DebugLog.d("onVolumeSlide","onVolumeSlide:"+s);
-
         Log.e("Volume","volume: "+volume+"--percent:"+percent);
         if (volume == -1){
             volume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
@@ -879,8 +854,6 @@ public class PlayerManager implements View.OnClickListener{
 
         //显示调节音量的弹窗
         showVolumeDialog(i);
-
-//        volume = index;
 
         String s = i +"%";
         if (i == 0){
@@ -923,13 +896,6 @@ public class PlayerManager implements View.OnClickListener{
             Log.e("upplayer","onProgressSlide:" + text);
         }
     }
-
-
-//    //手势弹窗
-//    private Dialog mBrightnessDialog;
-//    private ProgressBar mDialogBrightnessProgressBar;
-//    private TextView mDialogBrightnessTv;
-//    private ImageView mDialogBrightnessIconIv;
 
     private void showmBrightnessDialog(int brightnessPercent) {
         if (mBrightnessDialog == null){
