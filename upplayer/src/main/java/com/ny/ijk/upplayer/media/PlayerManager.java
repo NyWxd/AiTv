@@ -58,7 +58,7 @@ import tv.danmaku.ijk.media.player.pragma.DebugLog;
 /**
  * https://github.com/xongEr/ijkPlayer-Demo
  * @author yilv
- * copy by niuyuan on 2018/9/1.
+ * copied by niuyuan on 2018/9/1.
  */
 
 public class PlayerManager implements View.OnClickListener{
